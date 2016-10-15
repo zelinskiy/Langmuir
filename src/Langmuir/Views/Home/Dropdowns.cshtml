@@ -3,6 +3,7 @@
     Layout = "_Layout";
 }
 @section Scripts{
+    <script src="~/js/OutputFormula.js"></script>
     <script src="~/js/dropdowns.js"></script>
 }
 <link rel="stylesheet" href="~/css/dropdowns.css" />
@@ -14,12 +15,21 @@
             <p></p>
             <div class="btn-group" role="group" aria-label="...">
                 <button id="revertButton" type="button" class="btn btn-default">revert</button>
-                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">(</button>
-                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">)</button>
                 <button id="addSubscriptButton" type="button" class="btn btn-default">X <sub>n</sub></button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula"><sup>+</sup></button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula"><sup>-</sup></button>
             </div>
+
             <p></p>
             
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">(</button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">)</button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">[</button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">]</button>
+            </div>
+            
+            <p></p>
             
             <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

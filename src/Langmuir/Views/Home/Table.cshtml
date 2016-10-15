@@ -1,0 +1,180 @@
+﻿
+@{
+    ViewBag.Title = "Dropdown based formulae";
+    Layout = "_Layout";
+}
+@section Scripts{
+    <script src="~/js/OutputFormula.js"></script>
+    <script src="~/js/table.js"></script>
+}
+<link rel="stylesheet" href="~/css/table.css" />
+
+<div class="container">
+    <div class="row"><br /><br /></div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <span id="formulaOutput">C2H5OH</span>
+        </div>
+    </div>
+    <div class="row"><br/><br /><br /></div>
+    <div class="row">
+        <div class="col-md-12">
+            <hr />
+            <table class="fixed">
+                <tbody>
+                <tr>
+                    <td id="revertButton" class="btn btn-default">revert</td>
+                    <td></td>
+                    <td id="addSubscriptButton" class="btn btn-default">X <sub>n</sub></td>
+                    <td></td>
+                    <td class="btn btn-default hasHtmlAppendableToFormula"><sup>+</sup></td>
+                    <td class="btn btn-default hasHtmlAppendableToFormula"><sup>-</sup></td>
+                    <td></td>
+                    <td class="btn btn-default hasHtmlAppendableToFormula">(</td>
+                    <td class="btn btn-default hasHtmlAppendableToFormula">)</td>
+                    <td class="btn btn-default hasHtmlAppendableToFormula">[</td>
+                    <td class="btn btn-default hasHtmlAppendableToFormula">]</td>
+
+                </tr>
+                </tbody>
+            </table>
+            <hr/>
+
+            <table id="periodicSystem" class="fixed">
+                <tbody>
+                <tr>
+                    <td>H</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>He</td>
+                </tr>
+                <tr>
+                    <td>Li</td>
+                    <td>Be</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>N</td>
+                    <td>O</td>
+                    <td>F</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Ne</td>
+                </tr>
+                <tr>
+                    <td>Na</td>
+                    <td>Mg</td>
+                    <td>Al</td>
+                    <td>Si</td>
+                    <td>P</td>
+                    <td>S</td>
+                    <td>Cl</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Ar</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>Ca</td>
+                    <td>Sc</td>
+                    <td>Ti</td>
+                    <td>V</td>
+                    <td>Cr</td>
+                    <td>Mn</td>
+                    <td>Fe</td>
+                    <td>Co</td>
+                    <td>Ni</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Cu</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Rb</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Ag</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Cs</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Au</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Fr</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
