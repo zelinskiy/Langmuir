@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Dropdown based formulae";
+    Layout = "_Layout";
+}
+@section Scripts{
+    <script src="~/js/dropdowns.js"></script>
+}
+<link rel="stylesheet" href="~/css/dropdowns.css" />
+
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-3">
+            <p></p>
+            <div class="btn-group" role="group" aria-label="...">
+                <button id="revertButton" type="button" class="btn btn-default">revert</button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">(</button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">)</button>
+                <button id="addSubscriptButton" type="button" class="btn btn-default">X <sub>n</sub></button>
+            </div>
+            <p></p>
+            
+            
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Неметаллы
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a class="hasHtmlAppendableToFormula">H</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">O</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">S</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">Se</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">Te</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">Po</a></li>
+                </ul>
+            </div>
+            <p></p>
+
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Щелочные металлы
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a class="hasHtmlAppendableToFormula">Li</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">Na</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">K</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">Rb</a></li>
+                </ul>
+            </div>
+            <p></p>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Галогены
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a class="hasHtmlAppendableToFormula">F</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">Cl</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">Br</a></li>
+                    <li><a class="hasHtmlAppendableToFormula">I</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <p></p><p></p>
+        <div class="col-md-4 col-md-offset-3">
+            <span id="formulaOutput">C2H5OH</span>
+        </div>
+
+    </div>
+</div>
+
