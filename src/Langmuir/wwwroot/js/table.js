@@ -25,7 +25,6 @@ $(document)
 
         $(".hasHtmlAppendableToFormula")
             .each(function (i, node) {
-                console.log(node);
                 $(node).on("click",
                     function (e) {
                         outp.addSymbol(e.delegateTarget.innerHTML);

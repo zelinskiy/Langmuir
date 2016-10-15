@@ -1,4 +1,5 @@
 ﻿/// <autosync enabled="true" />
+/// <reference path="js/autocomplete.js" />
 /// <reference path="js/dropdowns.js" />
 /// <reference path="js/outputformula.js" />
 /// <reference path="js/site.js" />
