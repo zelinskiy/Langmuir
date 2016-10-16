@@ -15,14 +15,14 @@ let dropdownSequence = "EIBEBEEBI"
 
 let DROPDOWNdict = dict[
                     "E","PKPK";
-                    "I","PKKK"; 
+                    "I","PKHKKH"; 
                     "B","PK";
                     ]
 
 let tableSequence = "BIBBBBBBIB"
 
 let TABLEdict = dict[
-                    "I","PKKK"; 
+                    "I","PKHKKH"; 
                     "B","PK";
                     ]
 
