@@ -11,18 +11,13 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-5">
             <p></p>
             <div class="btn-group-lg" role="group" aria-label="...">
-                <button id="revertButton" type="button" class="btn btn-danger">revert</button>
-                <button id="addSubscriptButton" type="button" class="btn btn-info">X <sub>n</sub></button>
-                <button type="button" class="btn btn-default hasHtmlAppendableToFormula"><sup>+</sup></button>
-                <button type="button" class="btn btn-default hasHtmlAppendableToFormula"><sup>-</sup></button>
-            </div>
-
-            <p></p>
-
-            <div class="btn-group-lg" role="group" aria-label="...">
+                <button id="revertButton" type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Revert</button>
+                <button id="addSubscriptButton" type="button" class="btn btn-info">X<sub>n</sub></button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">X<sup>+</sup></button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">X<sup>-</sup></button>
                 <button type="button" class="btn btn-default hasHtmlAppendableToFormula">(</button>
                 <button type="button" class="btn btn-default hasHtmlAppendableToFormula">)</button>
                 <button type="button" class="btn btn-default hasHtmlAppendableToFormula">[</button>
@@ -36,21 +31,21 @@
             <p></p>
             <div id="selectorWidget" class="col-md-12">
                 <div class="row">
-                    <p id="groupNameLabel" class="well text-center">Name</p>
+                    <button type="button" id="addButton" class="col-md-12 btn btn-success"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Add </button>
                 </div>
                 <div class="row">
-                    <button type="button" id="upButton" class="col-md-4 col-md-offset-4 btn btn-primary">up</button>
+                    <button type="button" id="upButton" class="col-md-4 col-md-offset-4 btn btn-primary"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></button>
                 </div>
                 <div class="row">
-                    <button type="button" id="leftButton" class="col-md-4 btn btn-primary">left</button>
+                    <button type="button" id="leftButton" class="col-md-4 btn btn-primary"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></button>
                     <div class=""><div id="selector" class="vcenter col-md-4 text-center"></div></div>
-                    <button type="button" id="rightButton" class="col-md-4 btn btn-primary">right</button>
+                    <button type="button" id="rightButton" class="col-md-4 btn btn-primary"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></button>
                 </div>
                 <div class="row">
-                    <button type="button" id="downButton" class="col-md-4 col-md-offset-4 btn btn-primary">down</button>
+                    <button type="button" id="downButton" class="col-md-4 col-md-offset-4 btn btn-primary"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
                 </div>
                 <div class="row">
-                    <button type="button" id="addButton" class="col-md-12 btn btn-success">add</button>
+                    <p id="groupNameLabel" class="well text-center">Name</p>
                 </div>
             </div>
             

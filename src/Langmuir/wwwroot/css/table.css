@@ -22,3 +22,13 @@ table.fixed td {
     overflow: hidden; 
     text-align: center;  
 }
+
+.selem {
+    background-color: #fc4949;
+}
+.pelem {
+    background-color: #f1ff60;
+}
+.delem {
+    background-color: #8dcbf4;
+}
