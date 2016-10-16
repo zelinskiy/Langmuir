@@ -36,3 +36,13 @@ textarea {
     display: none
   }
 }
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+#formulaOutput {
+    margin-top: 30vh;
+    margin-left: 20vw;
+}
