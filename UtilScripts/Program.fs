@@ -26,7 +26,7 @@ let TABLEdict = dict[
                     "B","PK";
                     ]
 
-let autocompleteSequence = "KKPKPKKKPKPKKKKPKPKPKKKKKPKPKKKKKKPKPKPKKKPK"
+let autocompleteSequence = "PKHKKHPKPKHKKHPKPKHKKKHPKPKHPKKKKKHPKPKHKKKKKHPKPKPKHKKHPK"
 
 
 let stringToList (s:string) = s.ToList() |> Seq.map Char.ToString |> Seq.toList 
