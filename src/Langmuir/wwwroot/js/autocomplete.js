@@ -180,6 +180,8 @@ $(document)
 
         appendElementToFormula = function (symbol) {
             outp.addSymbol(symbol);
+            $("#autoCompleteInput").val("");
+            filterElements();
         }
 
 

@@ -1,0 +1,8 @@
+﻿#formulaOutput {
+    font-size: 40pt;
+}
+
+#elemsList {
+    height: 50vh;
+    overflow-y: scroll;
+}

@@ -50,9 +50,9 @@ let sumGOMS =
 
 [<EntryPoint>]
 let main argv = 
-    autocompleteSequence
+    dropdownSequence
     |> stringToList 
-    //|> customToGOMS DROPDOWNdict []
+    |> customToGOMS DROPDOWNdict []
     |> ruleZero
     |> ruleOne    
     |> calculateGOMS
