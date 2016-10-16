@@ -1,0 +1,37 @@
+﻿#formulaOutput {
+    font-size: 40pt;
+}
+
+#groupNameLabel {
+    font-size: 15pt;
+}
+
+#selectorWidget {
+    background-color: #a6dee0;
+}
+
+#selector {
+    font-size: 30pt;
+    text-align: center;
+    height: 120px;
+    background-color: #a6dee0;
+}
+
+#rightButton {
+    height: 120px;
+}
+
+#leftButton {
+    height: 120px;
+}
+
+#upButton {
+    height: 100px;
+}
+
+#downButton {
+    height: 100px;
+}
+#addButton {
+    margin-top: 20px;
+}

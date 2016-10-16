@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Dropdown based formulae";
+    Layout = "_Layout";
+}
+@section Scripts{
+    <script src="~/js/OutputFormula.js"></script>
+    <script src="~/js/selector.js"></script>
+}
+<link rel="stylesheet" href="~/css/selector.css" />
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <p></p>
+            <div class="btn-group-lg" role="group" aria-label="...">
+                <button id="revertButton" type="button" class="btn btn-danger">revert</button>
+                <button id="addSubscriptButton" type="button" class="btn btn-info">X <sub>n</sub></button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula"><sup>+</sup></button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula"><sup>-</sup></button>
+            </div>
+
+            <p></p>
+
+            <div class="btn-group-lg" role="group" aria-label="...">
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">(</button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">)</button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">[</button>
+                <button type="button" class="btn btn-default hasHtmlAppendableToFormula">]</button>
+            </div>
+
+            <p></p>
+
+            
+
+            <p></p>
+            <div id="selectorWidget" class="col-md-12">
+                <div class="row">
+                    <p id="groupNameLabel" class="well text-center">Name</p>
+                </div>
+                <div class="row">
+                    <button type="button" id="upButton" class="col-md-4 col-md-offset-4 btn btn-primary">up</button>
+                </div>
+                <div class="row">
+                    <button type="button" id="leftButton" class="col-md-4 btn btn-primary">left</button>
+                    <span id="selector" class="col-md-4 text-center"></span>
+                    <button type="button" id="rightButton" class="col-md-4 btn btn-primary">right</button>
+                </div>
+                <div class="row">
+                    <button type="button" id="downButton" class="col-md-4 col-md-offset-4 btn btn-primary">down</button>
+                </div>
+                <div class="row">
+                    <button type="button" id="addButton" class="col-md-12 btn btn-success">add</button>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+        <p></p><p></p>
+        <div class="col-md-4 col-md-offset-1">
+            <span id="formulaOutput">C2H5OH</span>
+        </div>
+
+    </div>
+</div>
+

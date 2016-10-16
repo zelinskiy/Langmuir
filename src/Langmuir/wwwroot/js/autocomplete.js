@@ -138,10 +138,19 @@ function filterElements(pattern) {
     var elements = ELEMENTS.slice();
     if (pattern !== undefined && pattern !== "") {
         elements = elements.filter(function(el) {
-            return el.symbol.toLowerCase().indexOf(pattern.toLowerCase())
-                + el.name.toLowerCase().indexOf(pattern.toLowerCase())
-                !== -2;
-        });
+                return el.symbol.toLowerCase().indexOf(pattern.toLowerCase()) +
+                    el.name.toLowerCase().indexOf(pattern.toLowerCase()) !==
+                    -2;
+            })
+            .sort(function (a, b) {
+                return a.symbol.localeCompare(b.symbol);
+            })
+            .sort(function (a, b) {
+                return a.symbol.length - b.symbol.length;
+            });
+            
+            
+            
     }
     for (var i = 0; i < elements.length; i++) {
         var el = elements[i];

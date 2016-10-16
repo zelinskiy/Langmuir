@@ -28,6 +28,11 @@ namespace Langmuir.Controllers
             return View();
         }
 
+        public IActionResult Selector()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();
