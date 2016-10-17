@@ -92,6 +92,58 @@ $(document)
         $("#revertButton").on("click", outp.revertChange);
         $("#addSubscriptButton").on("click", outp.addSubscript);
 
+        $("#toggleHelpButton")
+            .on("click",
+                function(e) {
+                    $("#helpControls").toggle();
+                });
+
+        $("#helpControls")
+            .on("click",
+                function(e) {
+                    $("#helpControls").hide();
+                });
+
+        $(document)
+            .keydown(function(e) {
+                switch(e.keyCode) {
+                    case 37:
+                        selector.Left();
+                        break;
+                    case 39:
+                        selector.Right();
+                        break;
+                    case 40:
+                        selector.Down();
+                        break;
+                    case 38:
+                        selector.Up();
+                        break;
+                    case 13:
+                        selector.AddToOutput();
+                        break;
+                    case 8:
+                        outp.revertChange();
+                        break;
+                    case 50:
+                        outp.addSymbol("<sub>2</sub>");
+                        break;
+                    case 51:
+                        outp.addSymbol("<sub>3</sub>");
+                        break;
+                    case 52:
+                        outp.addSymbol("<sub>4</sub>");
+                        break;
+                    case 53:
+                        outp.addSymbol("<sub>5</sub>");
+                        break;
+                    case 54:
+                        outp.addSymbol("<sub>6</sub>");
+                        break;
+                }
+
+            });
+
         $(".hasHtmlAppendableToFormula")
             .each(function (i, node) {
                 $(node).on("click",

@@ -41,3 +41,26 @@
     height: 80px;
     font-size: 2.5em;
 }
+
+body {
+    overflow: hidden;
+}
+
+#toggleHelpButton {
+    position: fixed;
+    right: 5vw;
+    top: 70px;
+    width: 75px;
+    height: 75px;
+    font-size: 2em;
+}
+
+#helpControls {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    width: 80vw;
+}
